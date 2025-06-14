@@ -1,17 +1,17 @@
 function getComputerChoice (){
   let temp = Math.floor(Math.random() * 3)
-  console.log(arr[temp]) //
+  return arr[temp] 
 }
 function getHumanChoice(){
   let userc = prompt("请输入rock,paper,scissors 其中的一种")
-  console.log(userc)//
+  return userc
 }
 function playRound(humanChoice,computerChoice){
   humanChoice = humanChoice.toLowerCase()
   console.log(humanChoice)
   if((humanChoice === 'rock' && computerChoice === 'scissors')||(humanChoice === 'scissors' && computerChoice === 'paper')||(humanChoice === 'paper' && computerChoice === 'rock')){
     humanScore++
-     console.log(`You lose! ${humanChoice} beats ${computerChoice}`)
+     console.log(`You win! ${humanChoice} beats ${computerChoice}`)
   }
   else if (humanChoice === computerChoice)
   {
@@ -19,7 +19,7 @@ function playRound(humanChoice,computerChoice){
   }
   else{
     computerScore++
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+    console.log(`You win! ${computerChoice} beats ${humanChoice}`)
   }
    
 }
