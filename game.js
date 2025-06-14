@@ -27,7 +27,9 @@ function playRound(humanChoice,computerChoice){
 }
 for(let i = 0; i < 5; i++)
 {
-  playRound()
+  const humanSelection = getHumanChoice()//
+  const computerSelection = getComputerChoice()//
+  playRound(humanSelection,computerSelection)
 }
 if(humanScore > computerScore)
 {
@@ -43,8 +45,7 @@ else{
 }
 let arr = ['rock','paper','scissors']
 
-const humanSelection = getHumanChoice()//
-const computerSelection = getComputerChoice()//
+
 playGame()
 
 
